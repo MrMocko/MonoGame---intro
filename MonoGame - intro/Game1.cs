@@ -71,7 +71,8 @@ namespace MonoGame___intro
             _spriteBatch.Draw(godzillatexture, new Vector2(-50, 250), Color.AliceBlue);
             _spriteBatch.Draw(skullTexture, new Vector2(550, 300), Color.White);
             Random generator = new Random();
-            _spriteBatch.Draw(sparksp3Texture, new Vector2(Generator.next285, 165), Color.White);
+            _spriteBatch.Draw(sparksp3Texture, new Vector2(generator.Next(310, 315), generator.Next (260, 265)), Color.White);
+            _spriteBatch.Draw(sparksp3Texture, new Vector2(generator.Next(420, 425), generator.Next(260, 265)), Color.White);
 
             _spriteBatch.End();
 
